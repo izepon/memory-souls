@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="./script/game.js"></script>
+    <script defer src="./script/script.js"></script>
+
+    <title>Jogo da Memória Dark Souls</title>
+  </head>
+  <body>
+      
+    <main class="container"> 
+        <h1>MEMORY SOULS</h1>  
+        <div class="score">
+            <div class="timer">Tempo:&#32;<span id="timePassed">&#32;00:00:00</span></div>
+            <div class="moveCounter">Moves: <span id="numberActions">0</span></div>
+        </div>
+
+        <div id="gameBoard"></div>
+
+        <div id="gameOver">
+            <div class="endMessage">Parabéns, você completou o jogo!</div>
+            <div class="endTimer">Tempo de jogo: 00:00:00</div>
+            <div class="endMoves">Você precisou de 0 movimentos para vencer.</div>
+            <button id="restart" onclick="restart()">Jogue novamente</button>
+        </div>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Jean Carlos Izepon</h3>
+
+        <a
+            href="https://www.linkedin.com/in/jean-izepon/"
+            target="_blank"
+            itemprop="url"
+        >
+            <img class="icon-social" src="./assets/images/linkedin.png" />
+        </a>
+
+        <a
+            href="https://www.instagram.com/izepon/"
+            target="_blank"
+            itemprop="url"
+        >
+            <img class="icon-social" src="./assets/images/insta.png" />
+        </a>
+
+        <a href="https://github.com/izepon" target="_blank" itemprop="url">
+            <img class="icon-social" src="./assets/images/git.ico" />
+        </a>
+        </footer>
+    
+  </body>
+</html>

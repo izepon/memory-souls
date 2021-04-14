@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #212222;
+    text-align: center;
+
+    background: url("../assets/images/bonfire_rest.gif") no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-shadow: 0.5px 0.5px 20px #f0b45bde;
+    margin-bottom: 10px;
+}
+
+.card {
+    height: 160px;
+    width: 130px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_back{
+    transition: 0.5s;
+}
+
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(0, 0, 26);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card_front {
+    transform: rotateY(180deg);
+    background-color: #101c2c;
+}
+
+.card_back {
+    color: #101c2c;
+    background-color: #05c3ff;
+    font-size: 30px;    
+}
+
+.icon, .back_icon{
+    width: 100%;
+    height: 100%;
+}
+
+#gameOver {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    color: white;
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+
+#restart {
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: yellow;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 15px #FFD700;
+}
+
+#gameBoard {
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.endMessage{
+    font-size: 40px;
+    color: #ffd700;
+    text-shadow: 0.5px 0.5px 20px #FFD700;
+}
+
+.endTimer, .endMoves{
+    font-size: 25px;
+    color: rgb(243, 243, 241);
+    text-shadow: 0.5px 0.5px 10px rgba(245, 245, 6, 0.808);
+    margin-top: 30px;
+}
+
+.endTimer{
+    font-size: 30px;
+}
+
+.score{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timer, .moveCounter{
+    /* display: flex; */
+    justify-content: space-between;
+    min-width: 140px;
+    background-color: rgb(133, 89, 31);
+    font-size: 20px;
+    border: 2px solid rgb(202, 173, 6);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 0.5px 0.5px 20px #FFD700;
+    box-shadow: -2px 2px 1px #b39804;
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    
+}
+
+.icon-social{
+    width: 40px;
+    height: 40px;
+    padding: 5px;      
+} 
+
+.icon-social:hover{
+    border-radius: 10px;
+    background-color: #FFF;
+}
