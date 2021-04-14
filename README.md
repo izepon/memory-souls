@@ -7,11 +7,11 @@ A intenção é praticar utilização do HTML, CSS e JavaScript com breve noçã
 Tela do projeto:
 
 <p align="center">
-  <img alt="jogo-da-memoria-dark-souls" src="" width="100%">
+  <img alt="jogo-da-memoria-dark-souls" src="https://github.com/izepon/memory-souls/blob/master/assets/images/memory%20souls.PNG" width="100%">
 </p>
 
 
-### Link para jogar: 
+### Link para jogar: https://izepon.github.io/memory-souls/
 
 #  :computer:Tecnologia utilizadas:
 
